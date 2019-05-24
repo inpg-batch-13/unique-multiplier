@@ -1,11 +1,17 @@
 function multiply(arr) {
   // your code here
-  return arr.reduce((a, b) => a * b)
+  // return arr.reduce((a, b) => a * b)
+  return arr.reduce(function(a, b) {
+    return a * b
+  })
 }
 
 function uniqueMultiplier(arr) {
   // your code here
-  return arr.map(a => multiply(arr) / a)
+  // return arr.map(a => multiply(arr) / a)
+  return arr.map(function(a) {
+    return multiply(arr) / a
+  })
 }
 
 // TEST CASES
