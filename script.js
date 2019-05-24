@@ -5,6 +5,7 @@ function multiply(arr) {
 
 function uniqueMultiplier(arr) {
   // your code here
+  return arr.map(a => multiply(arr) / a)
 }
 
 // TEST CASES
