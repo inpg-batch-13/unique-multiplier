@@ -1,5 +1,6 @@
 function multiply(arr) {
   // your code here
+  return arr.reduce((a, b) => a * b)
 }
 
 function uniqueMultiplier(arr) {
