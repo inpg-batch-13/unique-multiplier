@@ -1,5 +1,5 @@
 function multiply(arr) {
-  
+
   var outcome = 1
   for (var i = 0; i < arr.length; i++) {
  outcome *= arr[i]
@@ -8,7 +8,15 @@ function multiply(arr) {
 }
 
 function uniqueMultiplier(arr) {
-  // your code here
+
+  var result = []
+
+  for (i = 0; i< arr.length ; i++) {
+    result.push(multiply(arr) / arr[i])
+  }
+
+  return result
+  
 }
 
 // TEST CASES
