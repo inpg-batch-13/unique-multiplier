@@ -1,9 +1,22 @@
 function multiply(arr) {
-  // your code here
+  var total = [1]
+  for (var i = 0; i < arr.length; i++) {
+    
+    total =  total * arr[i]
+  }
+
+  return total
+ 
 }
 
 function uniqueMultiplier(arr) {
-  // your code here
+  var total = []
+  for (var i = 0; i < arr.length; i++) {
+    total.push (multiply(arr)/arr[i])
+  }
+
+  return total
+  
 }
 
 // TEST CASES
